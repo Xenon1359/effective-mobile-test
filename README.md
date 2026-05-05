@@ -37,13 +37,16 @@ Backend is available only inside Docker network.
 
 ```bash
 git clone https://github.com/Xenon1359/effective-mobile-test.git
+```
+
+```bash
 cd effective-mobile-test
 ```
 
 ### 2. Start containers
 
 ```bash
-docker compose up --build
+docker-compose up --build
 ```
 
 ---
