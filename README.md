@@ -31,15 +31,29 @@ Backend is available only inside Docker network.
 
 ---
 
+## Requirements
+
+Before running the project, make sure the following tools are installed:
+
+- Docker
+- Docker Compose V2
+
+Check installation:
+
+```bash
+docker --version
+docker compose version
+```
+
+Docker installation guide:
+https://docs.docker.com/get-docker/
+
 ## How to Run
 
 ### 1. Clone repository
 
 ```bash
 git clone https://github.com/Xenon1359/effective-mobile-test.git
-```
-
-```bash
 cd effective-mobile-test
 ```
 
