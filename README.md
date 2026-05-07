@@ -45,7 +45,10 @@ docker --version
 docker compose version
 ```
 
-Docker installation guide:
+Docker Engine installation guide on Linux (terminal only):
+https://docs.docker.com/engine/install/
+
+Docker installation guide on Windows, Linux, MacOS:
 https://docs.docker.com/get-docker/
 
 ## curl http://localhostHow to Run
