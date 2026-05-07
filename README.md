@@ -48,7 +48,7 @@ docker compose version
 Docker installation guide:
 https://docs.docker.com/get-docker/
 
-## How to Run
+## curl http://localhostHow to Run
 
 ### 1. Clone repository
 
@@ -63,9 +63,17 @@ cd effective-mobile-test
 docker-compose up --build
 ```
 
+or
+
+```bash
+docker compose up --build
+```
+
 ---
 
 ## How to Check
+
+Open another terminal.
 
 Run:
 
