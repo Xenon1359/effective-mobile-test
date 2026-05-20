@@ -4,15 +4,24 @@ services:
   backend:
     build:
       context: ./backend
-    container_name: effective-mobile-backend
+    container_name: DPM-backend
     expose:
       - "8080"
     networks:
-      - effective-mobile-network
+      - DPM-network
+    restart: on-failure
+
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
 
   nginx:
     image: nginx:1.27-alpine
-    container_name: effective-mobile-nginx
+    container_name: DPM-nginx
     depends_on:
       - backend
     ports:
@@ -20,8 +29,16 @@ services:
     volumes:
       - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
     networks:
-      - effective-mobile-network
+      - DPM-network
+    restart: unless-stopped
+
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
 
 networks:
-  effective-mobile-network:
+  DPM-network:
     driver: bridge

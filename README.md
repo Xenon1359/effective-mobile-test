@@ -1,4 +1,4 @@
-# Effective Mobile Test Task
+# Dockerized Python Microservice
 
 ## Project Description
 
@@ -51,13 +51,13 @@ https://docs.docker.com/engine/install/
 Docker installation guide on Windows, Linux, MacOS:
 https://docs.docker.com/get-docker/
 
-## curl http://localhostHow to Run
+## How to Run
 
 ### 1. Clone repository
 
 ```bash
 git clone https://github.com/Xenon1359/effective-mobile-test.git
-cd effective-mobile-test
+cd DPM-test-project
 ```
 
 ### 2. Start containers
@@ -87,7 +87,7 @@ curl http://localhost
 Expected result:
 
 ```text
-Hello from Effective Mobile!
+Powered by Docker and poor life choices...
 ```
 
 ---
