@@ -57,7 +57,7 @@ https://docs.docker.com/get-docker/
 
 ```bash
 git clone https://github.com/Xenon1359/effective-mobile-test.git
-cd DPM-test-project
+cd dockerized-python-microservice
 ```
 
 ### 2. Start containers
