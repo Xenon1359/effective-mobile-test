@@ -56,7 +56,7 @@ https://docs.docker.com/get-docker/
 ### 1. Clone repository
 
 ```bash
-git clone https://github.com/Xenon1359/effective-mobile-test.git
+git clone https://github.com/Xenon1359/dockerized-python-microservice
 cd dockerized-python-microservice
 ```
 
